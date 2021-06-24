@@ -1,0 +1,2 @@
+# Discord Bug Report Tool
+This tool was created to provide a solution for generating reporting commands, since the original typeform that provided this functionality was shut down. PRs and issues are welcome, feel free to fix my horrendous code :)

@@ -1,5 +1,6 @@
 import {Container, Form, FormGroup, FormControl, FormLabel, Alert, Button, Col, Row, Card} from 'react-bootstrap';
 import {useState} from 'react';
+import GithubCorner from 'react-github-corner';
 
 export default function Home() {
   const [steps, setSteps] = useState([]);
@@ -26,6 +27,7 @@ export default function Home() {
 
   return (
     <Container fluid={true} className={'text-white bg-dark d-flex justify-content-center'} style={{height: '100vh'}}>
+      <GithubCorner href={'https://github.com/PermissionError/discord-bug-report-tool'}/>
       <Card style={{width: '70vw', overflowY: 'scroll'}} className={'text-white bg-dark justify-content-center border-white d-block'}>
         {cmd}
           <Form style={{width: '85%'}} className={'d-block mx-auto align-top my-lg-4 my-md-3 my-sm-2'} onSubmit={generateCommand}>
